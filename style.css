@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+body{
+/* background-color: rgba(199, 225, 223, 0.635) ; */
+font-family:'Quicksand';
+padding: 0;
+margin: 0;
+overflow-x: hidden;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.WordSection1{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-2%);
+    transition:all 1s;
+    margin-left: 50px; 
+    margin-right: 50px;
+    margin-bottom: 10px;
+    width:1572px;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
